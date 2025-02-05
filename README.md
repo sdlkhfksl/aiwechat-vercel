@@ -1,5 +1,6 @@
 # aiwechat-vercel
 使用[vercel](https://vercel.com/dashboard)的functions，将ai功能加入微信公众号
+![image](cover.png)
 
 ### 介绍
 
@@ -7,10 +8,13 @@
 
 ### 快速开始
 
-提前到vercel的dashboard的Storage创建redis数据库
+- 提前到Vercel创建Redis数据库
+  - Dashboard--Storage--Create--KV Redis
+![image](https://github.com/pwh-pwh/aiwechat-vercel/assets/24500520/523f9aec-faaf-415a-8cb9-520041a06d58)
 
-fork本项目，到vercel点击构建,环境变量填写参数，在vercel该项目详情页面的Storage选择连接前面创建的redis数据库
-,成功后vercel会自动配置KV_URL环境变量
+- Fork本Github项目，到Vercel点击构建,环境变量填写参数
+- 在vercel该项目详情页面的Storage选择连接前面创建的redis数据库
+  - 数据库链接成功后，Vercel会自动配置KV_URL环境变量
 
 #### 数据库配置详情
 
@@ -82,6 +86,7 @@ botType=** 机器人类型 目前支持(gpt,echo,spark,qwen,gemini)例如botType
 - 支持限制问答次数
 - 支持企业微信群机器人
 - todolist功能，用户可以在机器人管理待办事件
+- 查看股票和币价
 
 ### 杂念
 项目起因:偶然看到网上有人使用vercel实现了,但是功能比较单一，看了一下文档，支持go所以就想自己开发下，支持接入多一点ai和自定义功能，项目仅供学习参考
